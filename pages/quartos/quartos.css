@@ -1,0 +1,242 @@
+*{
+  margin: 0;
+  padding:0;
+  font-family: 'Oswald', sans-serif;
+  box-sizing: border-box;
+}
+
+/* estilo do cabeçalho*/
+body{
+  background-color: rgb(243, 243, 243);
+}
+header{
+  width: 100vW;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: all .4s;
+  
+
+}
+
+.desaparecer{
+  display: none;
+
+}
+
+
+.container-conteudo-header-topo{
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  font-size: 12px;
+  background-color: var(--cor-primaria);
+  padding: .5rem 3.7rem ;
+  width: 100%;
+  
+}
+
+
+
+
+#conteudo2-topo{
+  display: flex;
+  gap: 1rem;
+}
+
+
+.container-navegacao{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: .9rem 3.7rem;
+  width: 100%;
+  
+
+}
+
+ul.menu{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-weight: bold;
+
+  
+
+}
+
+header a{
+  text-decoration: none;
+  font-size: 14px;
+  color: lightgray;  
+}
+
+#logotipo{
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--cor-primaria);
+  
+}
+
+.cor-primaria{
+  color: var(--cor-primaria);
+  transition: all .3s;
+}
+
+
+
+nav.show .menu{
+  position: fixed;
+  top:0;
+  right: 0;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+}
+
+/* cores */
+:root{
+  --cor-primaria: #edcb9a;
+}
+
+.show ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  font-size: 18px;
+  font-weight: bold;
+  visibility: visible;
+}
+
+header ul li{
+  position: relative;
+  color: lightgray;
+}
+
+header nav.show ul li a{
+  color: black;
+} 
+
+header nav ul li a:hover{
+  color: var(--cor-primaria);
+}
+
+header nav ul li a:hover::after{
+  content: '';
+  width: 100%;
+  height: 1.4px;
+  position: absolute;
+  left: 0;
+  bottom: -0.8rem;
+  background-color: var(--cor-primaria);
+  transition: all .2s;
+}
+
+#botao-reserva{
+  padding: .8rem 1.7rem;
+  border: none;
+  background-color: var(--cor-primaria);
+}
+
+#botao-reserva a{
+  font-weight: bold;
+  color: white;
+}
+
+.toggle{
+  cursor: pointer;
+}
+
+#icone-open-menu{
+  display: none;
+}
+
+#icone-close-menu{
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  font-size: 30px;
+  display: none;
+}
+
+nav.show #icone-close-menu{
+  display: block;
+}
+
+
+/* Adaptando o header*/
+
+@media (max-width: 1150px){
+  ul.menu{
+    display: none;
+  }
+
+  #icone-open-menu{
+    display: block;
+    color: var(--cor-primaria);
+  }
+}
+
+
+/* main*/
+#container-img-cabecalho{
+  margin-top: 6rem;
+  position: relative;
+  height: 12rem;
+  background-image: url(imagens/foto-topo-header.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
+}
+
+#cores-por-cima-img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right,rgba(247, 176, 188, 0.644), rgba(0, 0, 0, 0.432));
+  
+}
+
+#container-conteudo-img-hotel{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#container-conteudo-img-hotel{
+  position: absolute;
+  top: 5rem;
+  left: 14rem;
+  text-align: left;
+}
+
+#nome-pagina{
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+
+#referencia{
+  font-size: 18px;
+  
+}
+
+#referencia-colorida{
+  color: var(--cor-primaria);
+}

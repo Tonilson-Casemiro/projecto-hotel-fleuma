@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva - Hotel FLEUMA</title>
+  <link rel="stylesheet" href="reserva.css">
+</head>
+<body>
+  <!--Cabeçalho do site-->
+  <header >
+
+    <div  class="container-conteudo-header-topo">
+      <p class="conteudo-header-topo">Bem-vindo ao HOTEL FLEUMA.</p>
+
+      <div id="conteudo2-topo">
+        <p class="conteudo-header-topo">+1 888 123 4567</p>
+        <p class="conteudo-header-topo">contact@HOTELFLEUMA.com</p>
+      </div>
+    </div>
+
+    <nav class="container-navegacao ">
+      <a href="" id="logotipo">FLEUMA</a>
+      
+      <ul class="menu ">
+        <li><a href="">SOBRE NÓS</a></li>
+        <li><a href="">QUARTOS</a></li>
+        <li><a href="">GALERIA</a></li>
+        <li><a href="">BLOGS</a></li>
+        <li><a href="../contactos/contactos.html">CONTACTOS</a></li>
+        <button id="botao-reserva"><a href=""> <i class="fa-solid fa-calendar-days"></i> FAZER RESERVA</a></button>
+      </ul>
+
+      <div class="toggle" id="icone-open-menu"><i class="fa-solid fa-bars fa-lg"></i></div>
+      <div class="toggle" id="icone-close-menu">x</div>
+    </nav>
+    
+  </header>
+
+  <main>
+    <section id="container-img-cabecalho">
+      <div id="cores-por-cima-img"></div>
+      <div id="container-conteudo-img-hotel">
+        <p id="nome-pagina" class="maiuscula">formulario de inscrisão</p>
+        <p id="referencia">casa /  <span id="referencia-colorida"> Formulario de inscrisão </span></p>
+      </div>
+    </section>
+
+    <section id="conteudo-sobre-reserva">
+      <p class="maiuscula" id="conteudo-grande">reserve o seu quarto</p>
+      <p class="maiuscula" id="sobre-pequeno">reserve o seu quarto agora</p>
+
+      <p id="paragrafo-reserva">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ex voluptate officia animi necessitatibus esse iste facilis culpa quae cumque voluptatem,  quasi dicta nam, eveniet quo et atque natus deserunt.</p>
+    </section>
+
+    <section id="area-formulario">
+      <form action="">
+        <div class="container-inputs-curto">
+          <div class="area-input-curto">
+            <label for="nome" class="maiuscula">seu nome</label>
+            <input type="text" placeholder="SEU NOME" class="input-curto" id="nome" required>
+          </div>
+          <div class="area-input-curto">
+            <label for="email" class="maiuscula">endereço de email</label>
+            <input type="email" placeholder="SEU ENDEREÇO DE EMAIL" class="input-curto" id="email" required>
+          </div>
+        </div>
+        
+        <div class="container-inputs-curto">
+          <div class="area-input-curto">
+            <label for="telefone" class="maiuscula">número de telefone</label>
+            <input type="text" placeholder="SEU NÚMERO DE TELEFONE" class="input-curto" id="telefone" required>
+          </div>
+          <div class="area-input-curto">
+            <label for="pais" class="maiuscula">país</label>
+            <input type="text" placeholder="ESCOLHA O SEU PAÍS " class="input-curto" id="pais" required>
+          </div>
+        </div>
+
+        <div class="container-inputs-curto">
+          <div class="area-input-curto">
+            <label for="check-in-out" class="maiuscula">check-in/out</label>
+            <input type="text" placeholder="23-05-2002 - 28-05-2022" class="input-curto" id="check-in-out" required>
+          </div>
+          <div class="area-input-curto">
+            <label for="convidados" class="maiuscula">convidados</label>
+            <input type="text" placeholder="CONVIDADOS" class="input-curto" id="convidados" required>
+          </div>
+        </div>
+        
+        <div id="container-input-longo">
+          <div id="area-input-longo">
+            <label for="quarto" class="maiuscula">tipo de quarto</label>
+            <input type="text" placeholder="SELECIONE O TIPO DE QUARTO" id="quarto">
+          </div> 
+        </div>
+
+        <div id="container-text-area">
+          <div id="area-texto">
+            <label for="comentario" class="maiuscula">os teus comentários</label>
+            <textarea name="comentario" id="comentario" cols="102" rows="10"></textarea>
+          </div>
+        </div>
+
+        <input type="submit" id="botao-submit" class="maiuscula" value="reserve o seu quarto agora">
+        
+      </form>
+    </section>
+    
+  </main>
+
+  <footer>
+    <div class="conteudo-footer">
+      <a class="maiuscula cor-primaria destaque-footer" >fleuma</a>
+      <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates expedita id nisi eaque eius, obcaecati magnam aspernatur</p>
+    </div>
+    
+    <div class="conteudo-footer ">
+      <p class="maiuscula destaque-footer">mais sobre</p>
+      <p id="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis consectetur repellendus itaque dicta cupiditate praesentium illum, molestias voluptas quas illo hic porro numquam, alias quod ea. Itaque, quae fugit! Est?</p>
+    </div>
+
+    <div class="conteudo-footer">
+      <p class="maiuscula destaque-footer">links de navegação</p>
+      <div class="container-itens-info">
+        <a href=""><i class="fa-solid fa-child-reaching"></i> Sobre Nós</a>
+        <a href=""><i class="fa-solid fa-address-book"></i> Contactos</a>
+        <a href=""><i class="fa-solid fa-map"></i> Nossa Localização</a>
+        <a href=""><i class="fa-solid fa-image"></i> Galeria</a>
+      </div>
+    </div>
+
+    <div class="conteudo-footer">
+      <p class="maiuscula destaque-footer">informação de contactos</p>
+
+      <div class="container-itens-info">
+        <p><i class="fa-solid fa-location-dot"></i> Lorem ipsum dolor sit amet consecte</p>
+        <p><i class="fa-solid fa-phone"></i> Telefone: 930077358</p>
+        <p><i class="fa-solid fa-fax"></i> Tel-Fixo: 933 555 400</p>
+        <p><i class="fa-solid fa-earth-americas"></i> Web: www.fleuma.com</p>
+        <p><i class="fa-solid fa-envelope"></i> Email: hotelfleuma@gmail.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="reserva.js"></script>
+  <script src="https://kit.fontawesome.com/0321c5e24c.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

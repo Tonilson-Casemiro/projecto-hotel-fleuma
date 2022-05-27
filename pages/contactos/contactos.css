@@ -1,0 +1,467 @@
+*{
+  margin: 0;
+  padding:0;
+  font-family: 'Oswald', sans-serif;
+  box-sizing: border-box;
+}
+
+/* cores */
+:root{
+  --cor-primaria: #edcb9a;
+  --cor-secundaria: #f7f8f9;
+  --cor-terciaria: #afafaf;
+  --cor-quartenaria: #e3e3e3;
+}
+
+/* estilo do cabeçalho*/
+body{
+  background-color: white;
+}
+header{
+  width: 100vW;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: all .4s;
+  
+
+}
+
+.desaparecer{
+  display: none;
+
+}
+
+
+.container-conteudo-header-topo{
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  font-size: 12px;
+  background-color: var(--cor-primaria);
+  padding: .5rem 3.7rem ;
+  width: 100%;
+  
+}
+
+
+
+
+#conteudo2-topo{
+  display: flex;
+  gap: 1rem;
+}
+
+
+.container-navegacao{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: .9rem 3.7rem;
+  width: 100%;
+  
+
+}
+
+ul.menu{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-weight: bold;
+
+  
+
+}
+
+header a{
+  text-decoration: none;
+  font-size: 14px;
+  color: lightgray;  
+}
+
+#logotipo{
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--cor-primaria);
+  
+}
+
+.cor-primaria{
+  color: var(--cor-primaria);
+  transition: all .3s;
+}
+.maiuscula{
+  text-transform: uppercase;
+}
+
+
+nav.show .menu{
+  position: fixed;
+  top:0;
+  right: 0;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+}
+
+
+
+.show ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  font-size: 18px;
+  font-weight: bold;
+  visibility: visible;
+}
+
+header ul li{
+  position: relative;
+  color: lightgray;
+}
+
+header nav.show ul li a{
+  color: black;
+} 
+
+header nav ul li a:hover{
+  color: var(--cor-primaria);
+}
+
+header nav ul li a:hover::after{
+  content: '';
+  width: 100%;
+  height: 1.4px;
+  position: absolute;
+  left: 0;
+  bottom: -0.8rem;
+  background-color: var(--cor-primaria);
+  transition: all .2s;
+}
+
+#botao-reserva{
+  padding: .8rem 1.7rem;
+  border: none;
+  background-color: var(--cor-primaria);
+}
+
+#botao-reserva a{
+  font-weight: bold;
+  color: white;
+}
+
+.toggle{
+  cursor: pointer;
+}
+
+#icone-open-menu{
+  display: none;
+}
+
+#icone-close-menu{
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  font-size: 30px;
+  display: none;
+}
+
+nav.show #icone-close-menu{
+  display: block;
+}
+
+
+/* Adaptando o header*/
+
+@media (max-width: 1150px){
+  ul.menu{
+    display: none;
+  }
+
+  #icone-open-menu{
+    display: block;
+    color: var(--cor-primaria);
+  }
+}
+
+
+/* main*/
+#container-img-cabecalho{
+  margin-top: 6rem;
+  position: relative;
+  height: 12rem;
+  background-image: url(imagens/foto-topo-header.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
+}
+
+#cores-por-cima-img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right,rgba(247, 176, 188, 0.644), rgba(0, 0, 0, 0.432));
+  
+}
+
+#container-conteudo-img-hotel{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#container-conteudo-img-hotel{
+  position: absolute;
+  top: 5rem;
+  left: 14rem;
+  text-align: left;
+}
+
+#nome-pagina{
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+
+#referencia{
+  font-size: 18px;
+  
+}
+
+#referencia-colorida{
+  color: var(--cor-primaria);
+}
+
+
+/* conteudo sobre contactos*/
+
+#conteudo-sobre-reserva{
+  margin-top: 5rem;
+  padding: .5rem;
+  padding-left: 4rem;
+  color: lightgray;
+}
+
+#conteudo-grande{
+  font-size: 34px;
+  margin-bottom: .8rem;
+}
+
+#sobre-pequeno{
+  margin-bottom: 2rem;
+}
+
+#paragrafo-reserva{
+  text-align: justify;
+  max-width: 580px;
+}
+
+/* Formulário dos contactos*/
+
+#formulario-contactos {
+  margin-top: 3rem;
+  margin-left: 4rem;
+
+}
+
+#formulario-contactos input{
+  padding: 1rem 1.5rem ;
+  border: 1px solid #e3e3e3;
+  background-color: var(--cor-secundaria);
+  width: 100%;
+  outline: none;
+  
+
+}
+
+.container-input{
+  max-width: 500px;
+  margin-bottom: 1rem;
+}
+
+#formulario-contactos textarea{
+  background-color: var(--cor-secundaria);
+  padding: 1rem;
+  border: 1px solid #e3e3e3;
+}
+
+#botao-submit{
+  margin-top: 1.5rem;
+  display: block;
+  background-color: var(--cor-primaria);
+  width: 300px;
+  color: white;
+  padding: 1rem 1.5rem;
+  border: none;
+}
+
+/* area do mapa , info-contactos, redes sociais  */
+#container-mais-contactos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* google map*/
+
+iframe{
+  margin-top: 5rem;
+  max-width: 370px;
+  max-height: 310px;
+  border: 1px solid black;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: #11111170 1px 1px 8px;
+}
+
+/* retangulos com info contactos*/
+
+#area-dos-retangulos-contacto{
+  margin-top: 2rem;
+}
+
+.container-retangulo-contacto{
+  margin-bottom: 1rem;
+  display: flex;
+  border: 1px solid var(--cor-terciaria);
+  align-items: center;
+  gap: 1rem;
+}
+
+.container-retangulo-contacto i{
+  padding: .6rem 1rem;
+  background-color: var(--cor-quartenaria);
+  color: var(--cor-terciaria);
+}
+
+.container-retangulo-contacto p{
+  padding: .2rem .2rem;
+  font-size: 16px;
+  color: var(--cor-terciaria);
+}
+
+/* redes socias*/
+#container-redes-socias{
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.fa-facebook-f{
+  color: blue;
+}
+.fa-instagram{
+  color:palevioletred;
+}
+.fa-whatsapp{
+  color: green;
+}
+
+#container-redes-socias i{
+  border: .3px solid var(--cor-terciaria);
+  padding: .3rem .8rem;
+}
+
+
+footer{
+  display: flex;
+  gap: 2rem;
+  justify-content: baseline;
+  justify-content: center;
+  background-color: rgb(245, 243, 243);
+  padding: 2rem;
+  margin-top: 2rem;
+
+}
+
+footer p{
+  max-width: 300px;
+  color: gray;
+  text-align: justify;
+  font-size: 15px;
+}
+
+footer a{
+  display: block;
+  text-decoration: none;
+  color: gray;
+}
+
+footer #p1{
+  max-width: 220px;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+
+footer #p2{
+  max-width: 250px;
+  text-align: left;
+  line-height: 1.5rem;
+}
+
+.destaque-footer{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.conteudo-footer{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: .5rem;
+}
+
+.container-itens-info{
+  display: flex;
+  flex-direction: column;
+  gap:.6rem;
+}
+
+/* adtaptação do footer*/
+
+@media(max-width: 1200px){
+
+  #conteudo-sobre-reserva{
+    padding-left: 2rem;
+    
+  }
+
+  /* footer */
+  
+  footer{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer p{
+    text-align: center;
+  }
+
+  footer #p2{
+    text-align: center;
+  }
+
+  footer a{
+    text-align: center;
+  }
+}
