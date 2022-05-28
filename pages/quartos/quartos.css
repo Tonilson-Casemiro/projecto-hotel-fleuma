@@ -7,7 +7,7 @@
 
 /* estilo do cabeçalho*/
 body{
-  background-color: rgb(243, 243, 243);
+  background-color: white;
 }
 header{
   width: 100vW;
@@ -23,6 +23,10 @@ header{
 .desaparecer{
   display: none;
 
+}
+
+.maiuscula{
+  text-transform: uppercase;
 }
 
 
@@ -104,6 +108,9 @@ nav.show .menu{
 /* cores */
 :root{
   --cor-primaria: #edcb9a;
+  --cor-secundaria: #f7f8f9;
+  --cor-terciaria: #afafaf;
+  --cor-quartenaria: #e3e3e3;
 }
 
 .show ul{
@@ -239,4 +246,67 @@ nav.show #icone-close-menu{
 
 #referencia-colorida{
   color: var(--cor-primaria);
+}
+
+/* seccao dos tipos de quarto */
+
+#seccao-quartos{
+  margin-top: 4rem;
+}
+
+.container-quarto{
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--cor-quartenaria);
+  max-width: 1100px;
+  margin: auto;
+  
+}
+
+img.imagem-quarto{
+  width: 340px;
+
+}
+
+.conteudo-quarto{
+  border-right: 1px solid var(--cor-quartenaria);
+  max-width: 800px;
+  color: var(--cor-terciaria);
+  padding-left: 1rem;
+}
+
+.container-descricao-quarto{
+  margin-bottom: 4rem;
+}
+
+.nome-quarto{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: .4rem;
+ 
+}
+
+.paragrafo-sobre-quarto{
+  margin-top: .4rem;
+
+}
+
+.container-sobre-preco{
+  padding:0rem 1rem;
+}
+
+.sobre-preco{
+  font-weight: bold;
+  color: var(--cor-primaria);
+  font-size: 18px;
+  text-align: center;
+}
+
+button.ver-mais{
+  padding: .5rem 1rem;
+  background-color: var(--cor-primaria);
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin-top: 1.5rem;
 }

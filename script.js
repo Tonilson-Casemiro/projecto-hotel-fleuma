@@ -1,3 +1,5 @@
+// script do header
+
 const header = document.querySelector('header')
 
 const conteudoTopo = document.querySelector('.container-conteudo-header-topo')
@@ -21,7 +23,7 @@ window.addEventListener('scroll',function(){
     conteudoTopo.classList.remove('container-conteudo-header-topo')
     conteudoTopo.classList.add('desaparecer')
     logo.classList.add('cor-primaria')
-    linkHeader.style.color = 'black'
+    
   }
   else{
     header.style.background = 'none'
@@ -47,4 +49,25 @@ for(const element of itensMenu){
     nav.classList.remove('show')
   })
 }
+
+
+
+
+
+// A parte da galeria de guias
+
+var cubos = document.querySelectorAll('.column')
+
+// Obtenha o retangulo expandida
+var retangulos = document.querySelectorAll('.container-info-elementos')
+
+for(const cubo of cubos){
+  cubo.addEventListener('click', function(){
+    console.log(cubo)
+  })
+}
+
+
+
+
 

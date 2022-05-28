@@ -188,6 +188,25 @@ nav.show #icone-close-menu{
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Area da imagem por baixo do cabeçalho */
 
 #container-img-cabecalho{
@@ -224,6 +243,26 @@ nav.show #icone-close-menu{
   font-weight: 600;
   font-family: 'Oswald', sans-serif;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -278,6 +317,27 @@ nav.show #icone-close-menu{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  icones representativos */
 
 #icones-representativos-hotel{
@@ -324,6 +384,24 @@ nav.show #icone-close-menu{
   border-radius: 50%;
 
  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
  /* cubos info */
 
@@ -371,6 +449,141 @@ nav.show #icone-close-menu{
   font-size: 14px;
   text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* seccao dos  */
+
+/* retangulos dos elementos  */
+
+
+#seccao-elementos{
+  margin-top: 8rem;
+  margin-bottom: 35rem;  
+}
+
+.cubo-elemento{
+  padding: 2rem .5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  border: 1px solid black;
+}
+
+
+#container-retangulos-representativos{
+  border: 1px solid black;
+  position: relative;
+  max-width: 850px;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+
+/* cards dos elementos */
+.container-info-elementos{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 850px;
+  box-shadow: 1px ;
+  padding: 2rem 2rem;
+  border: 1px solid black;
+  margin: auto;
+  position: absolute;
+  background-color: white;
+  opacity: 0;
+}
+
+
+img.imagem-elemento{
+  width:320px;
+  height: 270px;
+  
+}
+
+
+.nome-elemento{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+.container-conteudo-elemento{
+  padding: .5rem;
+}
+
+
+.conteudo-elemento{
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+}
+
+
+.retangulo-exibido{
+  opacity: 1;
+}
+
+
+/* A grade: Quatro colunas iguais que flutuam uma ao lado da outra */
+
+.row{
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  max-width: 200px;
+  border: 1px solid black;
+}
+
+
+
+.column .cubo-elemento:hover {
+  background-color: white;
+}
+
+
+
+#imagemExpandida{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -459,6 +672,22 @@ nav.show #icone-close-menu{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* secção enviar email */
 
 #seccao-email{
@@ -531,6 +760,26 @@ nav.show #icone-close-menu{
 #container-input-email i{
  color: white; 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
