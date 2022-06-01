@@ -81,6 +81,11 @@ header a{
   color: white;
   font-size: 14px;
 }
+header a.stick{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
 
 #logotipo{
   font-size: 20px;
@@ -593,6 +598,7 @@ img.imagem-elemento{
 #seccao-depoimentos{
   background-color: #f5f3f0;
   padding: 2rem;
+  padding-bottom: 8rem;
   margin-bottom: 12rem;
 }
 
@@ -630,6 +636,7 @@ img.imagem-elemento{
   align-items: center;
   padding: 0rem .8rem 3rem .8rem;
   background-color: white;
+  position: relative;
 
 }
 .imagem-depoente{
@@ -637,6 +644,33 @@ img.imagem-elemento{
   height: 60px;
   border-radius: 50%;
   transform: translateY(-1.2rem);
+  object-fit: cover;
+}
+
+.container-icones-star{
+  display: flex;
+  justify-content: center;
+  max-width: 200px;
+  margin: .4rem 0rem;
+}
+
+.virgulas-card-depoimentos{
+  display: flex;
+  justify-content: center;
+  width: 60px;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  opacity: 0.1;
+}
+
+.img-virgula{
+  width: 30px;
+ 
+}
+
+.img-estrela{
+  width: 10%;
 }
 
 .info-depoente{

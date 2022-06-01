@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+/* cores */
+:root{
+  --cor-primaria: #edcb9a;
+  --cor-secundaria: #f7f8f9;
+  --cor-terciaria: #afafaf;
+  --cor-quartenaria: #e3e3e3;
+}
+
 /* estilo do cabeçalho*/
 body{
   background-color: white;
@@ -73,6 +81,10 @@ ul.menu{
 
 }
 
+header{
+  border-bottom: .5px solid lightgray;
+}
+
 header a{
   text-decoration: none;
   font-size: 14px;
@@ -90,7 +102,9 @@ header a{
   color: var(--cor-primaria);
   transition: all .3s;
 }
-
+.maiuscula{
+  text-transform: uppercase;
+}
 
 
 nav.show .menu{
@@ -105,13 +119,7 @@ nav.show .menu{
   z-index: 999;
 }
 
-/* cores */
-:root{
-  --cor-primaria: #edcb9a;
-  --cor-secundaria: #f7f8f9;
-  --cor-terciaria: #afafaf;
-  --cor-quartenaria: #e3e3e3;
-}
+
 
 .show ul{
   list-style: none;
@@ -195,49 +203,12 @@ nav.show #icone-close-menu{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* main*/
 #container-img-cabecalho{
   margin-top: 6rem;
   position: relative;
   height: 12rem;
-  background-image: url(imagens/plasma.png);
+  background-image: url(imagens-quarto-casal/img1.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center center;
@@ -297,164 +268,220 @@ nav.show #icone-close-menu{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* seccao dos tipos de quarto */
-
-#seccao-quartos{
-  margin-top: 4rem;
+#seccao-quarto{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 2rem;
-  padding: 2rem;
+  margin-top: 4rem;
 }
 
-.container-quarto{
-  display: flex;
-  align-items: center;
-  border: 1px solid var(--cor-quartenaria);
-  max-width: 1100px;
+
+
+
+
+
+
+
+
+
+
+
+
+#container-img-retangulo{
   margin: auto;
-  
-}
-
-img.imagem-quarto{
-  width: 340px;
-
-}
-
-.conteudo-quarto{
-  border-right: 1px solid var(--cor-quartenaria);
-  max-width: 800px;
-  color: var(--cor-terciaria);
-  padding-left:1rem;
-  padding-right: 1rem;
-}
-
-.paragrafo-sobre-quarto{
- 
-}
-
-.nome-quarto{
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: .1rem;
- 
-}
-
-.area-estrelas-amarelas{
   display: flex;
-  gap: .3rem;
+  gap: 3rem;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  padding: 1rem;
 }
 
-.img-estrela{
-  width: 5%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Parte da galeria de fotos */
+
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  max-width: 600px;
 }
 
-.paragrafo-sobre-quarto{
-  margin-top: .4rem;
-
-
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  max-width: 600px;
 }
 
-.container-icones-quartos{
-  display: flex;
-  gap: .5rem;
-  align-items: center;
-  margin-top: 1rem;
-
-
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
 }
 
-.container-icones-quartos abbr{
-  width: 5%;
-}
-
-.img-elementos{
-  padding: .1rem;
-  width: 100%;
-  border: 1px solid var(--cor-quartenaria);
-}
-
-.container-sobre-preco{
-  padding:0rem 1rem;
-}
-
-.sobre-preco{
-  font-weight: bold;
-  color: var(--cor-primaria);
-  font-size: 18px;
-  text-align: center;
-}
-
-button.ver-mais{
-  padding: .5rem 1rem;
-  background-color: var(--cor-primaria);
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
   color: white;
   font-weight: bold;
-  border: none;
-  margin-top: 1.5rem;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 
-@media(max-width: 878px){
-  img.imagem-quarto{
-    margin-top: 1rem;
-  }
+/*  container linha de colunas de imgs */
+.row{
+  display: flex;
+  justify-content: center;
+}
 
-  .container-quarto{
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    
-  }
-  .area-estrelas-amarelas{
-    max-width: 200px;
-    margin: auto;
-    justify-content: center;
-  }
-  .img-estrela{
-    width: 10%;
-  }
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
 
-  .container-icones-quartos{
-    justify-content: center;
-    margin: 1rem 0rem;
-  }
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+  max-width: 600px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+  margin: auto;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+/* retangulo-info-imgs */
+#container-info-fotos{
+  border: 2px solid var(--cor-primaria);
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+  align-items: center;
+  padding: 1rem;
+  border: 2px solid var(--cor-primaria);
+  height: 360px;
+  background-color: white;
+  color: gray;
   
-  button.ver-mais{
-    margin-top: .3rem;
-    margin-bottom: 1.5rem;
-  }
+}
 
+
+
+#sobre-preco-quarto{
+  font-size: 16px;
+  text-align: center;
+  border-left: 1px solid var(--cor-primaria);
+  padding: 1rem;
+}
+
+#sobre-preco-quarto #preco-quarto{
+  line-height: 1.6rem;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#container-info-numeros p{
+  font-size: 16px;
+  border: 1px solid var(--cor-primaria);
+  padding: .5rem 1rem;
+  margin-top: .3rem;
+  font-weight: bold;
+  
+
+}
+
+
+#container-info-fotos button{
+  padding: .7rem 1rem;
+  color: white;
+  background-color: var(--cor-primaria);
+  border: none;
+  font-weight: bold;
+}
+
+
+
+
+/* area das informações abaixo*/
+
+#container-info-quarto{
+  text-align: center;
+  padding: 1rem;
+  max-width: 900px;
+  margin: auto;
+  color: gray;
+}
+
+#container-info-quarto p{
+  margin-top: 1rem;
+  max-width: 700px;
+}
+
+.info-quarto{
+  font-weight: bold;
+  font-size: 18px;
 }
 
 
@@ -474,15 +501,6 @@ button.ver-mais{
 
 
 
-
-
-
-
-
-
-
-
-/* footer */
 
 footer{
   display: flex;
@@ -545,7 +563,10 @@ footer #p2{
 
   #conteudo-sobre-reserva{
     padding-left: 2rem;
+    
   }
+
+  /* footer */
   
   footer{
     justify-content: center;
@@ -565,3 +586,11 @@ footer #p2{
     text-align: center;
   }
 }
+
+
+
+
+
+
+
+

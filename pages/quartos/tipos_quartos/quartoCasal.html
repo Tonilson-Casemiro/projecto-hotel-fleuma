@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quarto Casal</title>
+  <link rel="stylesheet" href="stylesQuartos.css">
+</head>
+<body>
+   <!--Cabeçalho do site-->
+   <header >
+
+    <div  class="container-conteudo-header-topo">
+      <p class="conteudo-header-topo">Bem-vindo ao HOTEL FLEUMA.</p>
+
+      <div id="conteudo2-topo">
+        <p class="conteudo-header-topo">+1 888 123 4567</p>
+        <p class="conteudo-header-topo">contact@HOTELFLEUMA.com</p>
+      </div>
+    </div>
+    
+
+    <nav class="container-navegacao ">
+      <a href="index.html" rel="prev" id="logotipo">FLEUMA</a>
+      
+      <ul class="menu ">
+        <li><a href="">SOBRE NÓS</a></li>
+        <li><a class="pagesLink" href="pages/quartos/quartos.html">QUARTOS</a></li>
+        <li><a class="pagesLink" href="pages/galeria/galeria.html">GALERIA</a></li>
+        <li><a class="pagesLink" href="pages/blogs/blogs.html">BLOGS</a></li>
+        <li><a class="pagesLink" href="pages/contactos/contactos.html">CONTACTOS</a></li>
+        <button id="botao-reserva"><a href="pages/reserva/reserva.html"> <i class="fa-solid fa-calendar-days"></i> FAZER RESERVA</a></button>
+      </ul>
+
+      <div class="toggle" id="icone-open-menu"><i class="fa-solid fa-bars fa-lg"></i></div>
+      <div class="toggle" id="icone-close-menu">x</div>
+    </nav>
+    
+  </header>
+
+
+  <main>
+    <section id="container-img-cabecalho">
+      <div id="cores-por-cima-img"></div>
+      <div id="container-conteudo-img-hotel">
+        <p id="nome-pagina" class="maiuscula">nossos quartos</p>
+        <p id="referencia" >Quartos /  <span id="referencia-colorida"> Quarto casal </span></p>
+      </div>
+      
+    </section>
+
+
+    <!--Seccao da galeria de fotos dos quartos-->
+    <section id="seccao-quarto">
+
+      <!--Container das 2 seccoes-->
+      <div id="container-img-retangulo">
+
+        <!-- galeria de imagens dos quartos-->
+        <div class="container">
+
+          <!-- Full-width images with number text -->
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+              <img src="imagens-quarto-casal/img1.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+              <img src="imagens-quarto-casal/img2.webp" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+              <img src="imagens-quarto-casal/img1.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+              <img src="imagens-quarto-casal/img2.webp" style="width:100%">
+          </div>
+
+
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Image text 
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div> -->
+
+          <!-- Thumbnail images -->
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="imagens-quarto-casal/img1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="imagens-quarto-casal/img2.webp" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="imagens-quarto-casal/img1.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="imagens-quarto-casal/img2.webp" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+            </div>
+            
+          </div>
+        </div>
+
+
+        <!--retangulo sobre imagens-->
+        <div id="container-info-fotos">
+          <p id="sobre-preco-quarto">
+            Apartir de <br>
+            <span id="preco-quarto">10.000kz</span>
+            <br> por noite
+          </p>
+  
+          <div id="container-info-numeros">
+            <p>1 - Cama Casal</p>
+            <p>2 - Televisão</p>
+            <p>3 - Swit</p>
+            <p>4 - Bancas</p>
+          </div>
+  
+          <button class="maiuscula">fazer reserva</button>
+        </div>
+  
+      </div>
+
+
+      <div id="container-info-quarto">
+        <div>
+          <p class="info-quarto">Mais Infomações</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dicta rerum dolor? Laborum vel ea aperiam amet molestias. Qui cupiditate quas sequi repellat quod, temporibus nostrum voluptas explicabo facilis? Dolores!</p>
+        </div>
+
+        <div>
+          <p class="info-quarto">Amenidades</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic reiciendis eaque sit odit ipsam itaque dolore dolorum voluptatem quas natus ut doloremque autem, aut nobis illo, labore commodi saepe deleniti.</p>
+        </div>
+        
+      </div>
+
+    </section>
+    
+  </main>
+
+
+  <footer>
+    <div class="conteudo-footer">
+      <a class="maiuscula cor-primaria destaque-footer" >fleuma</a>
+      <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates expedita id nisi eaque eius, obcaecati magnam aspernatur</p>
+    </div>
+    
+    <div class="conteudo-footer ">
+      <p class="maiuscula destaque-footer">mais sobre</p>
+      <p id="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis consectetur repellendus itaque dicta cupiditate praesentium illum, molestias voluptas quas illo hic porro numquam, alias quod ea. Itaque, quae fugit! Est?</p>
+    </div>
+
+    <div class="conteudo-footer">
+      <p class="maiuscula destaque-footer">links de navegação</p>
+      <div class="container-itens-info">
+        <a href=""><i class="fa-solid fa-child-reaching"></i> Sobre Nós</a>
+        <a href=""><i class="fa-solid fa-address-book"></i> Contactos</a>
+        <a href=""><i class="fa-solid fa-map"></i> Nossa Localização</a>
+        <a href=""><i class="fa-solid fa-image"></i> Galeria</a>
+      </div>
+    </div>
+
+    <div class="conteudo-footer">
+      <p class="maiuscula destaque-footer">informação de contactos</p>
+
+      <div class="container-itens-info">
+        <p><i class="fa-solid fa-location-dot"></i> Lorem ipsum dolor sit amet consecte</p>
+        <p><i class="fa-solid fa-phone"></i> Telefone: 930077358</p>
+        <p><i class="fa-solid fa-fax"></i> Tel-Fixo: 933 555 400</p>
+        <p><i class="fa-solid fa-earth-americas"></i> Web: www.fleuma.com</p>
+        <p><i class="fa-solid fa-envelope"></i> Email: hotelfleuma@gmail.com</p>
+      </div>
+    </div>
+  </footer>
+
+
+<script src="scriptQuartos.js"></script>
+<script src="https://kit.fontawesome.com/0321c5e24c.js" crossorigin="anonymous"></script>
+</body>
+</html>
