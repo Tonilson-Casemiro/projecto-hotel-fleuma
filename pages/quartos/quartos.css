@@ -237,7 +237,7 @@ nav.show #icone-close-menu{
   margin-top: 6rem;
   position: relative;
   height: 12rem;
-  background-image: url(imagens/plasma.png);
+  background-image: url(imagens/quarto.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center center;
@@ -347,6 +347,7 @@ nav.show #icone-close-menu{
 
 img.imagem-quarto{
   width: 340px;
+  
 
 }
 

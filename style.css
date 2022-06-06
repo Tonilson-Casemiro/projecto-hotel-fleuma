@@ -125,13 +125,10 @@ nav.show .menu{
   visibility: visible;
 }
 
-header ul li{
+header  nav ul li{
   position: relative;
 }
 
-header nav.show ul li a{
-  color: black;
-} 
 
 header nav ul li a:hover{
   color: var(--cor-primaria);

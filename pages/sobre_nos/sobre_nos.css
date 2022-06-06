@@ -293,7 +293,7 @@ nav.show #icone-close-menu{
   display: flex;
   gap: 6rem;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 10rem;
   
 }
 
@@ -309,7 +309,7 @@ nav.show #icone-close-menu{
 
 
 #sobre-hotel-conteudo-p1{
-  font-size: 35px;
+  font-size: 40px;
   margin-bottom: .5rem;
   font-weight: bold;
 }
@@ -352,14 +352,23 @@ nav.show #icone-close-menu{
 
 #seccao-faturas{
   
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
-  margin-top: 4rem;
-  margin-bottom: 6rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   color: gray;
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   
 }
+
+.numero-fatura{
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
 
 #p-fatura{
   font-size: 18px;
@@ -367,33 +376,48 @@ nav.show #icone-close-menu{
   font-weight: bold;
 }
 
+#paragrafo-fatura{
+  margin: auto;
+  max-width: 1000px;
+  text-align: center;
+  padding: .5rem;
+}
+
 
 .container-cubos-fatura{
-  padding: .5rem;
+
   display: flex;
+  justify-content: center;
   gap: 1.5rem;
   font-weight: bold;
   margin-bottom: 2rem;
+  padding: 1rem;
+  max-width: 1000px;
+  width: 95%;
+
 }
 
 .cubo-fatura{
+  width: 50px;
   position: relative;
-  width: 200px;
   text-align: center;
-  padding: 4rem 7rem;
-  box-shadow: 1px 1px 5px rgba(15, 15, 15, 0.582);
+  padding: 5rem 7rem;
+  box-shadow: 1px 1px 10px var(--cor-quartenaria);
+  
 }
 
 
 
 .cubo-fatura img{
   position: absolute;
-  width: 100px;
+  max-width: 120px;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   opacity: .1;
 }
+
+
 
 .cubo-conteudo{
   position: absolute;
@@ -444,20 +468,66 @@ nav.show #icone-close-menu{
   max-width: 950px;
   margin: auto; 
   color: gray;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 4rem;
  
 }
 
 #imgs-servicos{
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 
-#seccao-servicos img{
-  width: 200px;
-  height: 150px;
+/* imagem com texto após o hover */
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  max-width: 300px;
 }
+
+/* Make the image to responsive */
+.image {
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #edca9abe;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: .3s ease;
+}
+
+/* When you mouse over the container, the overlay text will "zoom" in display */
+.container:hover .overlay {
+  transform: scale(1);
+}
+
+/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
 
 #p-servicos{
   font-size: 18px;
