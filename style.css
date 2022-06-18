@@ -367,6 +367,7 @@ nav.show #icone-close-menu{
  left: 50%;
  padding: 2rem;
  display: flex;
+ flex-wrap: wrap;
  justify-content: center;
  gap: 3rem;
  max-width: 800px;
@@ -410,16 +411,23 @@ nav.show #icone-close-menu{
  #container-cubos-info{
   display: flex;
   gap: 1.3rem;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: auto 1rem;
+  margin: auto;
+  margin-top: 3rem;
   transform: translateY(-4rem);
+ 
+}
+
+#container-cubos-info p{
+  color: gray;
 }
 
 .cubo-info{
   max-width: 300px;
   box-shadow: #11111170 5px 5px 22px;
-  background-color: rgb(1, 1, 24);
+  background-color: white;
   color: white;
   padding: 0rem 1rem 2rem 1rem;
   margin-top: 3rem;
@@ -438,7 +446,7 @@ nav.show #icone-close-menu{
   border-bottom: 2px solid white;
   border-radius: 50%;
   text-align: center;
-  background-color: rgb(1, 1, 24);
+  background-color: var(--cor-primaria);
   transform: translatey(-1.2rem);
   
 }
