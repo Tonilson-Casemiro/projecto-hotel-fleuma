@@ -410,7 +410,7 @@ nav.show #icone-close-menu{
 
  #container-cubos-info{
   display: flex;
-  gap: 1.3rem;
+  gap: 2.3rem;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -632,6 +632,7 @@ img.imagem-elemento{
   display: flex;
   justify-content: center;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .card-depoimentos{
